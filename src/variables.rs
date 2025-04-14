@@ -87,6 +87,24 @@ pub fn variables_en_rust() {
     // Salida: No negativo: 100, Sí negativo: -100
 
 
+    // Tipos de datos de punto flotante en Rust
+    // Declaración de un número de punto flotante de 32 bits (f32)
+    // Ideal para cálculos que requieren menos precisión y ocupan menos memoria
+    let flotante: f32 = 3.14; // Número de punto flotante de 32 bits
+    println!("Flotante: {}", flotante); // Salida: Flotante: 3.14
+    // Declaración de un número de punto flotante de 64 bits (f64)
+    // Ideal para cálculos que requieren mayor precisión
+    let flotante_largo: f64 = 3.14159265358979323846;
+     // Número de punto flotante de 64 bits
+    println!("Flotante largo: {}", flotante_largo); 
+    // Salida: Flotante largo: 3.14159265358979323846
+    
+
+    let verdadero:bool = true;
+    let verdadero = bool::from(true); // Booleano verdadero
+
+
+
     /*
     Recomendación: Aunque Rust puede inferir automáticamente el tipo de variable, 
     es una buena práctica especificarlo tú mismo. Esto no solo mejora la legibilidad 
@@ -95,5 +113,4 @@ pub fn variables_en_rust() {
     errores de compilación y optimizar el rendimiento de tu programa. 
     */
 
-    
 }
