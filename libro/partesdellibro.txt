@@ -1,0 +1,34 @@
+Un libro puede tener varias partes, y estas pueden variar según el tipo de libro (novela, académico, técnico, etc.), pero en general, las partes comunes de un libro son:
+
+---
+
+### 🧾 **Partes Preliminares (antes del contenido principal):**
+1. **Portada** – Título del libro, nombre del autor y, a veces, la editorial.
+2. **Contraportada** – Resumen del contenido o comentarios promocionales.
+3. **Lomo** – Parte lateral visible cuando el libro está cerrado; lleva el título y autor.
+5. **Portadilla** – Página con el título del libro solamente.
+6. **Página legal o de derechos** – Información de derechos de autor, edición, ISBN, etc.
+9. **Índice o tabla de contenido** – Lista de capítulos o secciones con sus páginas.
+10. **Prólogo o introducción** – Presentación del libro, a veces escrita por otra persona.
+
+---
+
+### 📖 **Cuerpo del libro (contenido principal):**
+1. **Capítulos o secciones** – División del contenido por temas o partes narrativas.
+2. **Notas al pie** – Aclaraciones o referencias colocadas al final de la página.
+3. **Ilustraciones, gráficos o tablas** – Material visual que complementa el texto.
+
+---
+
+### 📚 **Partes finales:**
+1. **Epílogo** – Comentario final del autor (común en novelas).
+2. **Conclusión** – Síntesis de ideas (más común en libros académicos o ensayos).
+3. **Apéndices o anexos** – Información complementaria.
+4. **Glosario** – Definiciones de términos técnicos o específicos del libro.
+5. **Bibliografía** – Fuentes consultadas o recomendadas.
+6. **Índice analítico** – Lista de temas o nombres ordenados alfabéticamente con sus páginas.
+7. **Colofón** – Información sobre la impresión (tipo de letra, imprenta, fecha).
+
+---
+
+¿Tienes un tipo específico de libro en mente? Puedo detallarlo más según eso.
