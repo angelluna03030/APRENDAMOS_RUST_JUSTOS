@@ -86,7 +86,6 @@ pub fn variables_en_rust() {
     println!("No negativo: {}, Sí negativo: {}", no_negativo, si_negativo);
     // Salida: No negativo: 100, Sí negativo: -100
 
-
     // Tipos de datos de punto flotante en Rust
     // Declaración de un número de punto flotante de 32 bits (f32)
     // Ideal para cálculos que requieren menos precisión y ocupan menos memoria
@@ -95,22 +94,24 @@ pub fn variables_en_rust() {
     // Declaración de un número de punto flotante de 64 bits (f64)
     // Ideal para cálculos que requieren mayor precisión
     let flotante_largo: f64 = 3.14159265358979323846;
-     // Número de punto flotante de 64 bits
-    println!("Flotante largo: {}", flotante_largo); 
+    // Número de punto flotante de 64 bits
+    println!("Flotante largo: {}", flotante_largo);
     // Salida: Flotante largo: 3.14159265358979323846
-    
 
-    let verdadero:bool = true;
+    let verdadero: bool = true;
     let verdadero = bool::from(true); // Booleano verdadero
-
-
+    let falso: bool = false;
+    let falso = bool::from(false); // Booleano falso
+    println!("Verdadero: {}, Falso: {}", verdadero,);
+    // Salida: Verdadero: true
+    println!("Falso: {}", falso);
+    // Salida: Falso: false
 
     /*
-    Recomendación: Aunque Rust puede inferir automáticamente el tipo de variable, 
-    es una buena práctica especificarlo tú mismo. Esto no solo mejora la legibilidad 
-    del código, sino que también te permite tener un mayor control sobre el uso de memoria. 
-    Además, conocer el tamaño del tipo de dato que estás utilizando puede ayudarte a evitar 
-    errores de compilación y optimizar el rendimiento de tu programa. 
+    Recomendación: Aunque Rust puede inferir automáticamente el tipo de variable,
+    es una buena práctica especificarlo tú mismo. Esto no solo mejora la legibilidad
+    del código, sino que también te permite tener un mayor control sobre el uso de memoria.
+    Además, conocer el tamaño del tipo de dato que estás utilizando puede ayudarte a evitar
+    errores de compilación y optimizar el rendimiento de tu programa.
     */
-
 }
