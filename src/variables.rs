@@ -91,22 +91,45 @@ pub fn variables_en_rust() {
     // Ideal para cálculos que requieren menos precisión y ocupan menos memoria
     let flotante: f32 = 3.14; // Número de punto flotante de 32 bits
     println!("Flotante: {}", flotante); // Salida: Flotante: 3.14
-    // Declaración de un número de punto flotante de 64 bits (f64)
-    // Ideal para cálculos que requieren mayor precisión
+                                        // Declaración de un número de punto flotante de 64 bits (f64)
+                                        // Ideal para cálculos que requieren mayor precisión
     let flotante_largo: f64 = 3.14159265358979323846;
     // Número de punto flotante de 64 bits
     println!("Flotante largo: {}", flotante_largo);
     // Salida: Flotante largo: 3.14159265358979323846
 
-    let verdadero: bool = true;
-    let verdadero = bool::from(true); // Booleano verdadero
-    let falso: bool = false;
-    let falso = bool::from(false); // Booleano falso
-    println!("Verdadero: {}, Falso: {}", verdadero,);
-    // Salida: Verdadero: true
-    println!("Falso: {}", falso);
+    // Tipos de datos boolean en Rust
+    // let _verdadero: bool = true;
+    // let verdadero = bool::from(true); // Booleano verdadero
+    // let falso: bool = false;
+    // let _falso1 = bool::from(false); // Booleano falso
+    // println!("Verdadero: {}, Falso: {}", _verdadero);
+    // // Salida: Verdadero: true
+    // println!("Falso: {}", falso);
     // Salida: Falso: false
 
+    // Tipos de datos tuplas en Rust
+
+    // Tupla con tres tipos de datos diferentes
+    let tupla: (i32, f64, char) = (42, 3.14, 'R');
+    println!("Tupla: ({}, {}, {})", tupla.0, tupla.1, tupla.2);
+    // salida : Tupla: (42, 3.14, R)
+    // Desestructuración de tuplas
+    let (x, y, z) = tupla; // Asignación de valores de la tupla a variables
+    println!("Desestructurada: x: {}, y: {}, z: {}", x, y, z);
+    // salida : Desestructurada: x: 42, y: 3.14, z: R
+    // Acceso a elementos de la tupla
+    println!("Acceso: x: {}, y: {}, z: {}", tupla.0, tupla.1, tupla.2);
+    // salida : Acceso: x: 42, y: 3.14, z: R
+    // Acceso a elementos de la tupla usando
+    println!("Acceso: {:?}", tupla);
+    // salida : Tupla: (42, 3.14, R)
+
+    // Tipos de datos arreglos en Rust
+    let arreglo : [i32; 5]   = [1, 2, 3, 4, 5];
+    // Arreglo de enteros de tamaño fijo
+    println!("Arreglo: {:?}", arreglo);
+    // Imprime el arreglo completo
     /*
     Recomendación: Aunque Rust puede inferir automáticamente el tipo de variable,
     es una buena práctica especificarlo tú mismo. Esto no solo mejora la legibilidad
@@ -114,4 +137,18 @@ pub fn variables_en_rust() {
     Además, conocer el tamaño del tipo de dato que estás utilizando puede ayudarte a evitar
     errores de compilación y optimizar el rendimiento de tu programa.
     */
+
+
+
+    // Esta macro permite imprimir estructuras como tuplas y arreglos.
+    // Para imprimir estos tipos, se usa el marcador de posición `{:?}`,
+    // que muestra los valores de manera completa y en formato de depuración.
+    let mi_tupla = (42, "Hola", true);
+    let mi_arreglo = [1, 2, 3, 4, 5];
+    println!("Tupla: {:?}", mi_tupla);
+     // Imprime: Tupla: (42, "Hola", true)
+    println!("Arreglo: {:?}", mi_arreglo); 
+    // Imprime: Arreglo: [1, 2, 3, 4, 5]
+    
+
 }
