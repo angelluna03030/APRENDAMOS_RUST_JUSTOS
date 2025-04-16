@@ -126,9 +126,24 @@ pub fn variables_en_rust() {
     // salida : Tupla: (42, 3.14, R)
 
     // Tipos de datos arreglos en Rust
+
+
+    // Arreglo de enteros de tamaño fijo de 5
+    // El tamaño del arreglo es fijo y se define en el momento de la declaración
+    // El tipo de dato del arreglo es i32 (entero de 32 bits)
+    // El arreglo contiene 5 elementos, todos inicializados a 0
     let arreglo : [i32; 5]   = [1, 2, 3, 4, 5];
     // Arreglo de enteros de tamaño fijo
     println!("Arreglo: {:?}", arreglo);
+    // salida : Arreglo: [1, 2, 3, 4, 5]
+    // Acceso a elementos del arreglo
+    println!("Acceso: {}, {}, {}", arreglo[0], arreglo[1], arreglo[2]);
+    // salida : Acceso: 1, 2, 3
+    // Un arreglo de 10 elementos, todos inicializados a 0
+    let arreglo = [0; 10];
+    println!("Arreglo: {:?}", arreglo);
+    // salida : Arreglo: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+     
     // Imprime el arreglo completo
     /*
     Recomendación: Aunque Rust puede inferir automáticamente el tipo de variable,
