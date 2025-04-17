@@ -158,12 +158,14 @@ pub fn variables_en_rust() {
     // Esta macro permite imprimir estructuras como tuplas y arreglos.
     // Para imprimir estos tipos, se usa el marcador de posición `{:?}`,
     // que muestra los valores de manera completa y en formato de depuración.
-    let mi_tupla = (42, "Hola", true);
+    let mi_tupla= (42, "Hola", true);
     let mi_arreglo = [1, 2, 3, 4, 5];
     println!("Tupla: {:?}", mi_tupla);
      // Imprime: Tupla: (42, "Hola", true)
     println!("Arreglo: {:?}", mi_arreglo); 
     // Imprime: Arreglo: [1, 2, 3, 4, 5]
+
+   
     
 
 }
