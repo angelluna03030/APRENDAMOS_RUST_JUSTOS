@@ -1,7 +1,6 @@
 pub fn operadores_en_rust (){
 
-    // ✅ 1. Operadores Lógicos (los que ya viste):
-
+ 
     // Operador	Descripción	Ejemplo
     // &&	AND lógico	true && false
     // `		`
@@ -43,5 +42,25 @@ pub fn operadores_en_rust (){
     // %=	Módulo y asigna	x %= 2
     // &= `	= ^= <<= >>=`	Asignaciones bit a bit
 
-    
+   // ✅ 1. Operadores Lógicos :
+
+
+   //Operador logico &&
+   let x:bool = true;
+   let y:bool = bool::from(true);
+   let z = false;
+   println!( "x && y = {}", x && y); // true && true = true
+   println!( "x && false = {}", x && false); // true && false = false
+   println!( "false && y = {}", x && z); // false && true = false
+
+   
+   //Operador logico ||
+   let a:bool = true;
+   let b:bool = bool::from(false);
+   let c= false;
+   println!( "a || b = {}", a || b); // true || false = true
+   println!( "a || false = {}", a || false); // true || false = true
+   println!( "false || b = {}", c || b); // false || true = true
+   println!( "false || false = {}", c || b); // false || false = false
+
 }
