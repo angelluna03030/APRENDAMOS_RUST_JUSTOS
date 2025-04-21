@@ -62,5 +62,20 @@ pub fn operadores_en_rust (){
    println!( "a || false = {}", a || false); // true || false = true
    println!( "false || b = {}", c || b); // false || true = true
    println!( "false || false = {}", c || b); // false || false = false
+   // Operador logico !
+    let d:bool = true;
+    let e:bool = bool::from(false);
+    println!( "d = {}", d); // true
+    println!( "e = {}", e); // false
+    println!( "!d = {}", !d); // !true = false
+    println!( "!e = {}", !e); // !false = true
 
+
+    
+    println!( "!(d && e) = {}", !(d && e)); // !(true && false) = true
+    println!( "!(d || e) = {}", !(d || e)); // !(true || false) = false
+    println!( "!(d && !e) = {}", !(d && !e)); // !(true && true) = false
+    println!( "!(d || !e) = {}", !(d || !e)); // !(true || true) = false
+    
+    
 }
