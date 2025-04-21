@@ -80,7 +80,7 @@ pub fn operadores_en_rust (){
 
     //2. Operadores Aritméticos:
 
-    // Operador Aritméticos +
+    // Operador Aritmético +
     let suma_enteros = 5 + 3; // Suma de dos números
     println!("Suma: {}", suma_enteros); // Salida: Suma: 8
     let suma_flotantes = 5.0 + 3.0; // Suma de dos números flotantes
@@ -91,10 +91,28 @@ pub fn operadores_en_rust (){
 
     //podemos ver que aqui muestra un error en la suma    |
     //                                                    v
-    let suma_mixta_enteros = 5 + 3.0;
+    //let suma_mixta_enteros = 5 + 3.0;
      // Suma de un entero y un flotante (se convierte a flotante)
     // Convertimos los booleanos a enteros antes de sumar
     let suma_mixta_bolenoas = (true as i32) + (false as i32); 
     println!("Suma mixta: {}", suma_mixta_bolenoas); // Salida: Suma mixta: 1
+
+    // Operador Aritmético -
+    let resta_enteros = 5 - 3; // Resta de dos números
+    println!("Resta: {}", resta_enteros); // Salida: Resta: 2
+    let resta_flotantes = 5.0 - 3.0; // Resta de dos números flotantes
+    println!("Resta flotantes: {}", resta_flotantes); // Salida: Resta flotantes: 2.0
+    
+
+    let resta_strings=String::from("Hola")-String::from(" Mundo"); // Error: no se puede restar cadenas
+    // Error: no se puede restar booleanos
+    let resta_boolenos =true-false; 
+    
+    // Convertimos el entero a flotante para realizar la resta
+    let restar_mixta_flotantes = (5 as f32) - 3.0; 
+    println!("Resta mixta: {}", restar_mixta_flotantes); // Salida: Resta mixta: 2.0
+    // Resta de un entero y un flotante (se convierte a entero)
+    let restar_mixta_enteros = 5 - (3.0 as u16);
+    println!("Resta mixta: {}", restar_mixta_enteros); // Salida: Resta mixta: 2
 
 }
