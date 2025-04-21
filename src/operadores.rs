@@ -104,9 +104,9 @@ pub fn operadores_en_rust (){
     println!("Resta flotantes: {}", resta_flotantes); // Salida: Resta flotantes: 2.0
     
 
-    let resta_strings=String::from("Hola")-String::from(" Mundo"); // Error: no se puede restar cadenas
-    // Error: no se puede restar booleanos
-    let resta_boolenos =true-false; 
+    // let resta_strings=String::from("Hola")-String::from(" Mundo"); // Error: no se puede restar cadenas
+    // // Error: no se puede restar booleanos
+    // let resta_boolenos =true-false; 
     
     // Convertimos el entero a flotante para realizar la resta
     let restar_mixta_flotantes = (5 as f32) - 3.0; 
@@ -114,5 +114,45 @@ pub fn operadores_en_rust (){
     // Resta de un entero y un flotante (se convierte a entero)
     let restar_mixta_enteros = 5 - (3.0 as u16);
     println!("Resta mixta: {}", restar_mixta_enteros); // Salida: Resta mixta: 2
+    
+
+    // Operador Aritmético *
+    let multiplicacion_enteros = 5 * 3; // Multiplicación de dos números
+    println!("Multiplicación: {}", multiplicacion_enteros); // Salida: Multiplicación: 15
+    let multiplicacion_flotantes = 5.0 * 3.0; // Multiplicación de dos números flotantes
+    println!("Multiplicación flotantes: {}", multiplicacion_flotantes); 
+    // Salida: Multiplicación flotantes: 15.0
+
+    // Multiplicación de un entero y un flotante (se convierte a flotante)
+    let multiplicacion_mixta_flotantes = (5 as f32) * 3.0;
+    println!("Multiplicación mixta: {}", multiplicacion_mixta_flotantes); 
+    // Salida: Multiplicación mixta: 15.0
+
+    // Multiplicación de un entero y un flotante (se convierte a entero)
+    let multiplicacion_mixta_enteros = 5 * (3.0 as u16);
+    println!("Multiplicación mixta: {}", multiplicacion_mixta_enteros);
+     // Salida: Multiplicación mixta: 15
+
+    // Multiplicación de un booleano y un entero (se convierte a entero)
+    let multiplicacion_mixta_boolenos = (true as i32) * 3;
+    println!("Multiplicación mixta: {}", multiplicacion_mixta_boolenos); 
+    // Salida: Multiplicación mixta: 3
+  
+
+
+
+
+    // Operador Aritmético /
+    let division_enteros = 5 / 2; // División de dos números enteros (entero)
+    println!("División: {}", division_enteros); // Salida: División: 2
+    let division_flotantes = 5.0 / 2.0; // División de dos números flotantes (flotante)
+    println!("División flotantes: {}", division_flotantes); // Salida: División flotantes: 2.5
+    // División de un entero y un flotante (se convierte a flotante)
+    let division_mixta_flotantes = (5 as f32) / 2.0;
+    println!("División mixta: {}", division_mixta_flotantes); // Salida: División mixta: 2.5
+    // División de un entero y un flotante (se convierte a entero)
+    let division_mixta_enteros = 5 / (2.0 as u16);
+    println!("División mixta: {}", division_mixta_enteros); // Salida: División mixta: 2
+    
 
 }
