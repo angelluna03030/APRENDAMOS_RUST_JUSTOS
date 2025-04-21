@@ -169,13 +169,14 @@ pub fn variables_en_rust() {
     let inmutable = 10; // variable inmutable
     //inmutable = 20; // Esto causará un error de compilación porque la variable es inmutable
     let inmutable2 = 20; // variable inmutable
-    const pi: f64 = 3.14159; // constante inmutable
+    const PI2: f64 = 3.14159; // constante inmutable
     println!("Inmutable: {}", inmutable); // Imprime: Inmutable: 10
     println!("Inmutable: {}", inmutable2); // Imprime: Inmutable: 20
-    println!("Constante: {}", pi); // Imprime: Constante: 3.14159
+    println!("Constante: {}", PI2); // Imprime: Constante: 3.14159
 
     // Tipo de varible Mutable
     let mut mutable = 10; // variable mutable
+    println!("Initial Mutable: {}", mutable); // Imprime: Initial Mutable: 10
     mutable = 20; // Esto está permitido porque la variable es mutable
     println!("Mutable: {}", mutable); // Imprime: Mutable: 20
     mutable = 30; // Esto también está permitido porque la variable es mutable
