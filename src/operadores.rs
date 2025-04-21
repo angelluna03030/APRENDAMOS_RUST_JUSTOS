@@ -71,11 +71,30 @@ pub fn operadores_en_rust (){
     println!( "!e = {}", !e); // !false = true
 
 
-    
+
     println!( "!(d && e) = {}", !(d && e)); // !(true && false) = true
     println!( "!(d || e) = {}", !(d || e)); // !(true || false) = false
     println!( "!(d && !e) = {}", !(d && !e)); // !(true && true) = false
     println!( "!(d || !e) = {}", !(d || !e)); // !(true || true) = false
     
+
+    //2. Operadores Aritméticos:
+
+    // Operador Aritméticos +
+    let suma_enteros = 5 + 3; // Suma de dos números
+    println!("Suma: {}", suma_enteros); // Salida: Suma: 8
+    let suma_flotantes = 5.0 + 3.0; // Suma de dos números flotantes
+    println!("Suma flotantes: {}", suma_flotantes); // Salida: Suma flotantes: 8.0
+    let suma_strings = String::from("Hola") + " Mundo"; // Concatenación de cadenas
+    println!("Suma strings: {}", suma_strings); // Salida: Suma strings: Hola Mundo
     
+
+    //podemos ver que aqui muestra un error en la suma    |
+    //                                                    v
+    let suma_mixta_enteros = 5 + 3.0;
+     // Suma de un entero y un flotante (se convierte a flotante)
+    // Convertimos los booleanos a enteros antes de sumar
+    let suma_mixta_bolenoas = (true as i32) + (false as i32); 
+    println!("Suma mixta: {}", suma_mixta_bolenoas); // Salida: Suma mixta: 1
+
 }
