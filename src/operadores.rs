@@ -157,11 +157,11 @@ pub fn operadores_en_rust (){
     // Operador Aritmético %
     let modulo_enteros = 5 % 2; // Módulo de dos números enteros
     println!("Módulo: {}", modulo_enteros); // Salida: Módulo: 1
-    let modulo_flotantes = 5.0 % 2.0; // Módulo de dos números flotantes (error)
-     println!("Módulo flotantes: {}", modulo_flotantes); // Error: no se puede calcular el módulo de flotantes
+    let modulo_flotantes = 5.0 % 2.0; // Módulo de dos números flotantes 
+     println!("Módulo flotantes: {}", modulo_flotantes); // Salida: Módulo: 1
     // Módulo de un entero y un flotante (se convierte a flotante)
     let modulo_mixta_flotantes = (5 as f32) % 2.0;
-    println!("Módulo mixta: {}", modulo_mixta_flotantes); // Salida: Módulo mixta: 1.0
+    println!("Módulo mixta: {}", modulo_mixta_flotantes); // Salida: Módulo mixta: 1
     // Módulo de un entero y un flotante (se convierte a entero)
     let modulo_mixta_enteros = 5 % (2.0 as u16);
     println!("Módulo mixta: {}", modulo_mixta_enteros); // Salida: Módulo mixta: 1

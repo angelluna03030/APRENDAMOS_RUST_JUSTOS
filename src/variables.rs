@@ -182,7 +182,7 @@ pub fn variables_en_rust() {
     mutable = 30; // Esto también está permitido porque la variable es mutable
     println!("Mutable: {}", mutable); // Imprime: Mutable: 30
 
-
+    
 
 
 }
