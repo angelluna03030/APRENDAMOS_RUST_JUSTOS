@@ -13,7 +13,7 @@ pub fn operadores_en_rust (){
     // *	Multiplicación	5 * 3
     // /	División	5 / 2
     // %	Módulo (residuo)	5 % 2
-    // ⚖️ 3. Operadores de Comparación (devuelven bool):
+  
     
     // Operador	Descripción	Ejemplo
     // ==	Igual a	5 == 5
@@ -168,6 +168,24 @@ pub fn operadores_en_rust (){
     // Módulo de un booleano y un entero (se convierte a entero)
     let modulo_mixta_boolenos = (true as i32) % 2;
     println!("Módulo mixta: {}", modulo_mixta_boolenos); // Salida: Módulo mixta: 1
+  // ⚖️ 3. Operadores de Comparación (devuelven bool):
+     // Operador	Descripción	Ejemplo
+    // ==	Igual a	5 == 5
+    // !=	Distinto de	5 != 3
+    // >	Mayor que	5 > 3
+    // <	Menor que	5 < 3
+    // >=	Mayor o igual que	5 >= 5
+    // <=	Menor o igual que	5 <= 6
+    // 🧠 4. Operadores Bit a Bit:
+    
 
-
+    // Operador	de Comparación ==
+    let igual_enteros = 5 == 5; // Igual a
+    println!("Igual: {}", igual_enteros); // Salida: Igual: true
+    let igual_flotantes = 5.0 == 5.0; // Igual a
+    println!("Igual flotantes: {}", igual_flotantes); // Salida: Igual flotantes: true
+    // Igual a (se convierte a entero)
+    let igual_mixta_flotantes = (5 as f32) == 5.0;
+    println!("Igual mixta: {}", igual_mixta_flotantes); // Salida: Igual mixta: true
+    
 }
