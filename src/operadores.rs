@@ -13,8 +13,15 @@ pub fn operadores_en_rust (){
     // *	Multiplicación	5 * 3
     // /	División	5 / 2
     // %	Módulo (residuo)	5 % 2
-  
-    
+      // ⚖️ 3. Operadores de Comparación (devuelven bool):
+     // Operador	Descripción	Ejemplo
+    // ==	Igual a	5 == 5
+    // !=	Distinto de	5 != 3
+    // >	Mayor que	5 > 3
+    // <	Menor que	5 < 3
+    // >=	Mayor o igual que	5 >= 5
+    // <=	Menor o igual que	5 <= 6
+
     // Operador	Descripción	Ejemplo
     // ==	Igual a	5 == 5
     // !=	Distinto de	5 != 3
@@ -168,16 +175,7 @@ pub fn operadores_en_rust (){
     // Módulo de un booleano y un entero (se convierte a entero)
     let modulo_mixta_boolenos = (true as i32) % 2;
     println!("Módulo mixta: {}", modulo_mixta_boolenos); // Salida: Módulo mixta: 1
-  // ⚖️ 3. Operadores de Comparación (devuelven bool):
-     // Operador	Descripción	Ejemplo
-    // ==	Igual a	5 == 5
-    // !=	Distinto de	5 != 3
-    // >	Mayor que	5 > 3
-    // <	Menor que	5 < 3
-    // >=	Mayor o igual que	5 >= 5
-    // <=	Menor o igual que	5 <= 6
-    // 🧠 4. Operadores Bit a Bit:
-    
+
 
     // Operador	de Comparación ==
     let igual_enteros = 5 == 5; // Igual a
@@ -201,5 +199,17 @@ pub fn operadores_en_rust (){
     let distinto_mixta_enteros = 5 != (3.0 as u16);
     println!("Distinto mixta: {}", distinto_mixta_enteros); // Salida: Distinto mixta: true
     
-    
+    // Operadores Bit a Bit
+
+    let a: u8 = 5; // 00000101
+    let b: u8 = 3; // 00000011
+    let and_bit_a_bit = a & b; // AND bit a bit
+    println!("AND bit a bit: {}", and_bit_a_bit); // Salida: AND bit a bit: 1 (00000001)
+    let or_bit_a_bit = a | b; // OR bit a bit
+    println!("OR bit a bit: {}", or_bit_a_bit); // Salida: OR bit a bit: 7 (00000111)
+    let xor_bit_a_bit = a ^ b; // XOR bit a bit
+    println!("XOR bit a bit: {}", xor_bit_a_bit); // Salida: XOR bit a bit: 6 (00000110)
+    let not_bit_a_bit = !a; // NOT bit a bit
+    println!("NOT bit a bit: {}", not_bit_a_bit); // Salida: NOT bit a bit: 250 (11111010)
+
 }
