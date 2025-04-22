@@ -187,5 +187,19 @@ pub fn operadores_en_rust (){
     // Igual a (se convierte a entero)
     let igual_mixta_flotantes = (5 as f32) == 5.0;
     println!("Igual mixta: {}", igual_mixta_flotantes); // Salida: Igual mixta: true
+
+
+    // Operador de Comparación !=
+    let distinto_enteros = 5 != 3; // Distinto de
+    println!("Distinto: {}", distinto_enteros); // Salida: Distinto: true
+    let distinto_flotantes = 5.0 != 3.0; // Distinto de
+    println!("Distinto flotantes: {}", distinto_flotantes); // Salida: Distinto flotantes: true
+    // Distinto de (se convierte a entero)
+    let distinto_mixta_flotantes = (5 as f32) != 3.0;
+    println!("Distinto mixta: {}", distinto_mixta_flotantes); // Salida: Distinto mixta: true
+    // Distinto de (se convierte a entero)
+    let distinto_mixta_enteros = 5 != (3.0 as u16);
+    println!("Distinto mixta: {}", distinto_mixta_enteros); // Salida: Distinto mixta: true
+    
     
 }
