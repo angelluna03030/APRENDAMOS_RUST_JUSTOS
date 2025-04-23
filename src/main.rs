@@ -1,5 +1,5 @@
 
-mod variables;
+
 mod operadores;
 fn main() {
     println!("Hello, world!");

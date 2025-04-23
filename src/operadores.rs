@@ -199,8 +199,43 @@ pub fn operadores_en_rust (){
     let distinto_mixta_enteros = 5 != (3.0 as u16);
     println!("Distinto mixta: {}", distinto_mixta_enteros); // Salida: Distinto mixta: true
     
-    // Operadores Bit a Bit
+    // Operador de Comparación <
+    let menorque_enteros = 5 < 3; // Menor que
+    println!("Menor que: {}", menorque_enteros); // Salida: Menor que: false
+    let menorque_flotantes = 5.0 < 3.0; // Menor que
+    println!("Menor que flotantes: {}", menorque_flotantes); 
+    // Salida: Menor que flotantes: false
 
+    // Operador de Comparación >
+    let mayorque_enteros = 5 > 3; // Mayor que
+    println!("Mayor que: {}", mayorque_enteros); // Salida: Mayor que: true
+    let mayorque_flotantes = 5.0 > 3.0; // Mayor que
+    println!("Mayor que flotantes: {}", mayorque_flotantes);
+    // Salida: Mayor que flotantes: true
+
+    // Operador de Comparación <=
+    let menor_igual_enteros = 5 <= 3; // Menor o igual que
+    println!("Menor o igual que: {}", menor_igual_enteros); // Salida: Menor o igual que: false
+    let menor_igual_flotantes = 5.0 <= 3.0; // Menor o igual que
+    println!("Menor o igual que flotantes: {}", menor_igual_flotantes);
+    // Salida: Menor o igual que flotantes: false
+
+    // Operador de Comparación >=
+    let mayor_igual_enteros = 5 >= 3; // Mayor o igual que
+    println!("Mayor o igual que: {}", mayor_igual_enteros); // Salida: Mayor o igual que: true
+    let mayor_igual_flotantes = 5.0 >= 3.0; // Mayor o igual que
+    println!("Mayor o igual que flotantes: {}", mayor_igual_flotantes);
+    // Salida: Mayor o igual que flotantes: true
+    
+
+
+
+
+
+
+    // Operadores Bit a Bit
+    // Operador  &
+    
     let a: u8 = 5; // 00000101
     let b: u8 = 3; // 00000011
     let and_bit_a_bit = a & b; // AND bit a bit
