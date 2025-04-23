@@ -211,10 +211,6 @@ pub fn operadores_en_rust() {
     println!("Mayor o igual que flotantes: {}", mayor_igual_flotantes);
     // Salida: Mayor o igual que flotantes: true
 
-
-
-
-    
     // Operadores Bit a Bit
     // Operador  &
 
