@@ -244,6 +244,18 @@ pub fn operadores_en_rust() {
     let resultado = a ^ b;
     println!("A: {:08b} ({})", a, a);
     println!("B: {:08b} ({})", b, b);
-    println!("A | B: {:08b} ({})", resultado, resultado);
+    println!("A | B: {:08b} ({})", resultado, resultado); // Salida: A ^ B: 00000110 (6)
+
+
+
+    // Operador !
+    let a: u8 = 5; // 00000101
+    let not_a = !a;
+
+    println!("a     = {:08b} ({})", a, a);
+    println!("!a    = {:08b} ({})", not_a, not_a);// salida: !a = 11111010 (250)
+
+
+
 
 }
