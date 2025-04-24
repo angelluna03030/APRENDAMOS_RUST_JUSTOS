@@ -213,15 +213,11 @@ pub fn operadores_en_rust() {
 
     // Operadores Bit a Bit
     // Operador  &
-
-    let a: u8 = 5; // 00000101
-    let b: u8 = 3; // 00000011
-    let and_bit_a_bit = a & b; // AND bit a bit
-    println!("AND bit a bit: {}", and_bit_a_bit); // Salida: AND bit a bit: 1 (00000001)
-    let or_bit_a_bit = a | b; // OR bit a bit
-    println!("OR bit a bit: {}", or_bit_a_bit); // Salida: OR bit a bit: 7 (00000111)
-    let xor_bit_a_bit = a ^ b; // XOR bit a bit
-    println!("XOR bit a bit: {}", xor_bit_a_bit); // Salida: XOR bit a bit: 6 (00000110)
-    let not_bit_a_bit = !a; // NOT bit a bit
-    println!("NOT bit a bit: {}", not_bit_a_bit); // Salida: NOT bit a bit: 250 (11111010)
-}
+    let a:u8 = 5; // binario: 0101
+    let b:u8 = 3; // binario: 0011
+    let resultado = a & b;
+    println!("A: {:08b} ({})", a, a);
+    println!("B: {:08b} ({})", b, b);
+    println!("A & B: {:08b} ({})", resultado, resultado);
+  
+  }
