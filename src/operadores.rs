@@ -232,8 +232,10 @@ pub fn operadores_en_rust() {
     let x: u8 = 7;
     println!("x: {:08b}", x); // Salida: x: 00000111
 
-    let texto: &str = &String::from("camila y juan se hicieron novios");
-    for byte in texto.as_bytes() {
-        println!("{:08b}", byte);
-    }
+    // let texto: &str = &String::from("camila y juan se hicieron novios");
+    // for byte in texto.as_bytes() {
+    //     println!("{:08b}", byte);
+    // }
+
+
 }
