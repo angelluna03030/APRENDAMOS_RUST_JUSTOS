@@ -213,11 +213,27 @@ pub fn operadores_en_rust() {
 
     // Operadores Bit a Bit
     // Operador  &
-    let a:u8 = 5; // binario: 0101
-    let b:u8 = 3; // binario: 0011
+    let a: u8 = 5; // binario: 0101
+    let b: u8 = 3; // binario: 0011
     let resultado = a & b;
     println!("A: {:08b} ({})", a, a);
     println!("B: {:08b} ({})", b, b);
     println!("A & B: {:08b} ({})", resultado, resultado);
-  
-  }
+
+    // Operadores Bit a Bit
+    // Operador  |
+    let a: u8 = 5; // binario: 00000101
+    let b: u8 = 3; // binario: 00000011
+    let resultado = a | b;
+    println!("A: {:08b} ({})", a, a);
+    println!("B: {:08b} ({})", b, b);
+    println!("A | B: {:08b} ({})", resultado, resultado);
+
+    let x: u8 = 7;
+    println!("x: {:08b}", x); // Salida: x: 00000111
+
+    let texto: &str = &String::from("camila y juan se hicieron novios");
+    for byte in texto.as_bytes() {
+        println!("{:08b}", byte);
+    }
+}
