@@ -237,5 +237,13 @@ pub fn operadores_en_rust() {
     //     println!("{:08b}", byte);
     // }
 
+   // Operadores Bit a Bit
+    // Operador  ^
+    let a: u8 = 5; // binario: 00000101
+    let b: u8 = 3; // binario: 00000011
+    let resultado = a ^ b;
+    println!("A: {:08b} ({})", a, a);
+    println!("B: {:08b} ({})", b, b);
+    println!("A | B: {:08b} ({})", resultado, resultado);
 
 }
