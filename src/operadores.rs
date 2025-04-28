@@ -237,7 +237,7 @@ pub fn operadores_en_rust() {
     //     println!("{:08b}", byte);
     // }
 
-   // Operadores Bit a Bit
+    // Operadores Bit a Bit
     // Operador  ^
     let a: u8 = 5; // binario: 00000101
     let b: u8 = 3; // binario: 00000011
@@ -246,16 +246,37 @@ pub fn operadores_en_rust() {
     println!("B: {:08b} ({})", b, b);
     println!("A | B: {:08b} ({})", resultado, resultado); // Salida: A ^ B: 00000110 (6)
 
-
-
     // Operador !
     let a: u8 = 5; // 00000101
     let not_a = !a;
 
     println!("a     = {:08b} ({})", a, a);
-    println!("!a    = {:08b} ({})", not_a, not_a);// salida: !a = 11111010 (250)
+    println!("!a    = {:08b} ({})", not_a, not_a); // salida: !a = 11111010 (250)
+
+    // Operador <<
+    let a: u8 = 5; // binario: 00000101
+    let resultado = a << 1; // Desplazamiento a la izquierda
+    println!("A: {:08b} ({})", a, a); // Salida: A: 00000101 (5)
+    println!("A << 1: {:08b} ({})", resultado, resultado); // Salida: A << 1: 00001010 (10)
 
 
 
+    // Operador >>
+    let a: u8 = 5; // binario: 00000101
+    let resultado = a >> 1; // Desplazamiento a la derecha
+    println!("A: {:08b} ({})", a, a); // Salida: A: 00000101 (5)
+    println!("A >> 1: {:08b} ({})", resultado, resultado); // Salida: A >> 1: 00000010 (2)
+  
 
+    // Operadores de Asignación = 
+    let mut x = 5; // Asignación de un valor a una variable mutable
+    println!("x = {}", x); // Salida: x = 5
+
+
+    // Operador de Asignación +=
+    let mut y = 5; // Asignación de un valor a una variable mutable
+    y += 3; // Suma y asigna
+    println!("x += 3: {}", y); // Salida: y += 3: 8
+
+       
 }
