@@ -283,6 +283,11 @@ pub fn operadores_en_rust() {
     let mut w = 5; // Asignación de un valor a una variable mutable
     w *= 3; // Multiplica y asigna
     println!("x *= 3: {}", w); // Salida: x *= 3: 15
+
+    // Operador de Asignación /=
+    let mut v = 5; // Asignación de un valor a una variable mutable
+    v /= 2; // Divide y asigna
+    println!("x /= 2: {}", v); // Salida: x /= 2: 2.5
     
         
 }
