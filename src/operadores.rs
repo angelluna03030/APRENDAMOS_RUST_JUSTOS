@@ -288,6 +288,11 @@ pub fn operadores_en_rust() {
     let mut v = 5; // Asignación de un valor a una variable mutable
     v /= 2; // Divide y asigna
     println!("x /= 2: {}", v); // Salida: x /= 2: 2.5
+
+    // Operador de Asignación %=
+    let mut u = 5; // Asignación de un valor a una variable mutable
+    u %= 2; // Módulo y asigna
+    println!("x %= 2: {}", u); // Salida: x %= 2: 1
+
     
-        
 }
