@@ -1,4 +1,10 @@
 pub fn control_de_flujo() {
+    // Control de flujo en Rust
+    // En Rust, el control de flujo se refiere a la forma en que se ejecutan las instrucciones en un programa.
+    // Esto incluye estructuras como condicionales (if, else, else if) y bucles (for, while).
+    // Estas estructuras permiten tomar decisiones y repetir acciones en función de ciertas condiciones.
+    // En este ejemplo, se muestran algunos ejemplos de control de flujo en Rust.
+    
     // control de flujo "if"
     // aqui estamos comparando si la variable tiene_licencia es igual a true
     let tiene_licencia = true;
