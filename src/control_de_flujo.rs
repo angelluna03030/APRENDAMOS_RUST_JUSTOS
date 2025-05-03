@@ -93,6 +93,61 @@ pub fn control_de_flujo() {
     // Imprimirá "El resultado final es: 20"
 
 
+    //control de flujo "for"
+    // aqui estamos definiendo un rango de 1 a 10
+    let rango = 1..10;
+    // aqui estamos iterando sobre el rango
+    for i in rango {
+        // aqui estamos imprimiendo el valor de i
+        println!("Valor de i: {}", i);
+    }
+    // salida : Valor de i: 1
+
+
+
+       // control de flujo "Scope" 
+       //"Scope" principal
+       let x = 10;
+       {
+           // Un scope interno (anidado)
+           let y = 5;
+           println!("Dentro del scope interno: x = {}, y = {}", x, y);
+           {// Un scope aún más interno
+               let z = 3;
+               println!("En el scope más profundo: x = {}, y = {}, z = {}", x, y, z);
+           }
+           // Aquí z ya no existe
+           // println!("z = {}", z); // Esto causaría un error
+       }
+       // Aquí y ya no existe
+       println!("En el scope principal: x = {}", x);
+       // println!("y = {}", y); // Esto causaría un erro
+
+
+
+
+
+
+
+
+    // sombreado en Rust  
+    // Scope principal
+    let mensaje = "Hola";
+    println!("Variable original: {}", mensaje);
+    {
+        // Scope interno - sombreamos la variable mensaje
+        let mensaje = "Saludos desde el scope interno";
+        println!("Variable sombreada: {}", mensaje);
+        {
+            // Podemos seguir sombreando en scopes más profundos
+            let mensaje = 42; // Incluso podemos cambiar el tipo
+            println!("Variable doblemente sombreada (ahora es un número): {}", mensaje);
+        }
+        // Aquí volvemos a la primera sombra
+        println!("De nuevo en el primer nivel de sombra: {}", mensaje);
+    }
+    // Y aquí tenemos la variable original, intacta
+    println!("Variable original al final: {}", mensaje);
 
 }
 
