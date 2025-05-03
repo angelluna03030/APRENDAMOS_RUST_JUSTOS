@@ -4,7 +4,7 @@ pub fn control_de_flujo() {
     // Esto incluye estructuras como condicionales (if, else, else if) y bucles (for, while).
     // Estas estructuras permiten tomar decisiones y repetir acciones en función de ciertas condiciones.
     // En este ejemplo, se muestran algunos ejemplos de control de flujo en Rust.
-    
+
     // control de flujo "if"
     // aqui estamos comparando si la variable tiene_licencia es igual a true
     let tiene_licencia = true;
@@ -53,7 +53,49 @@ pub fn control_de_flujo() {
     }
     // salida : Contar hasta que sea 10: 15
 
+
+
+    //control de flujo "loop"
+    // aqui estamos definiendo la variable contador y la inicializamos en 0
+    let mut contador:i8 = 10;
+    loop{
+        println!("Contar hasta que sea 0: {}", contador);
+        // aqui estamos decrementando el valor de contador en 1
+        contador -= 1;
+        if contador == 0 {
+            // aqui estamos saliendo del bucle
+            break;
+        }
+    }
+  // aqui no se esta controlado el flujo del programa, por lo que el bucle se ejecutara indefinidamente
+
+        // let mut contador = 1;
+        
+        // loop {
+        //     println!("Vuelta número: {}", contador);
+        //     contador += 1;
+            
+        //     // Nota: no hay ninguna condición que detenga el bucle
+        // }
+    
+ 
+    let mut contador = 0;
+    
+    let resultado = loop {
+        contador += 1;
+        
+        if contador == 10 {
+            break contador * 2;  // Aquí devolvemos un valor (20)
+        }
+    };
+    
+    println!("El resultado final es: {}", resultado);  
+    // Imprimirá "El resultado final es: 20"
+
+
+
 }
+
 
 
 
