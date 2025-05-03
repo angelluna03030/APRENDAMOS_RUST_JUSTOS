@@ -149,6 +149,20 @@ pub fn control_de_flujo() {
     // Y aquí tenemos la variable original, intacta
     println!("Variable original al final: {}", mensaje);
 
+
+
+    // control de flujo "match"
+    let calificacion = 85;
+    let resultado: &str = match calificacion {
+        90..=100 => "Excelente",
+        80..=89 => "Muy bueno",
+        70..=79 => "Bueno",
+        60..=69 => "Satisfactorio",
+        0..=59 => "Necesita mejorar",
+        _ => "Calificación inválida" // El comodín _ captura cualquier otro valor
+    };
+    println!("Tu desempeño fue: {}", resultado); // Imprimirá "Tu desempeño fue: Muy bueno"
+    
 }
 
 
