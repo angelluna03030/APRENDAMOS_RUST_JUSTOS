@@ -161,8 +161,13 @@ pub fn control_de_flujo() {
         0..=59 => "Necesita mejorar",
         _ => "Calificación inválida" // El comodín _ captura cualquier otro valor
     };
+
+    //curiosidad : el operador de rango ..= se utiliza para crear un rango inclusivo
     println!("Tu desempeño fue: {}", resultado); // Imprimirá "Tu desempeño fue: Muy bueno"
-    
+     // Este bucle imprimirá los números 1, 2, 3, 4, 5, 6, 7, 8, 9 y 10
+     for numero in 1..=10 {
+        println!("{}", numero);
+    }
 }
 
 
