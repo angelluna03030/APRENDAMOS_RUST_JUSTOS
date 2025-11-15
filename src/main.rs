@@ -1,10 +1,9 @@
 
 
 
-mod ownership;
-pub(crate) mod Ownership;
+mod structs;
 
 fn main() {
-    ownership::ownership();
+    structs::structs();
 }
 
