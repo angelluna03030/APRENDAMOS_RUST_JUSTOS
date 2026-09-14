@@ -1,7 +1,9 @@
-mod greet;
+mod router;
 use dotenv::dotenv;
 use std::env;
 use actix_web::{ App, HttpServer, web::{ self } };
+
+use crate::router::{info, insertar_data_base};
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
@@ -15,12 +17,15 @@ async fn main() -> std::io::Result<()> {
     println!("server on port: http://localhost:{}", port);
     HttpServer::new(|| {
         App::new()
-            .route("/hola", web::get().to(greet::greet))
+            .service(insertar_data_base)
+            .service(info)
+            .route("/router/{name}", web::get().to(router::greet))
             .route(
                 "/",
                 web::get().to(|| async { "ok" })
             )
-            .route("/{name}", web::get().to(greet::greet))
+
+            .route("/{name}", web::get().to(router::greet))
     })
         .bind((host, port))?
         .run().await?;
