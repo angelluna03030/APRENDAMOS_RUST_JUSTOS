@@ -19,6 +19,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .service(insertar_data_base)
             .service(info)
+            
             .route("/router/{name}", web::get().to(router::greet))
             .route(
                 "/",

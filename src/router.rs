@@ -28,6 +28,7 @@ pub(crate) async fn insertar_data_base(data: web::Bytes) -> impl Responder {
 
 #[get("/data")]
 pub(crate) async fn info() -> impl Responder {
+    // la funcion un unwarp() funcion que espra un valor y no exite el valor se cierra el programa 
     let db = get_data_base().lock().unwrap();
     HttpResponse::Ok().body(db.join(", "))
 }
