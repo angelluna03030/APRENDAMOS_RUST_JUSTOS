@@ -2,13 +2,13 @@
 services:
   postgres:
     image: postgres:17
-    container_name: tutorial-postgres
+    container_name: your-container
     restart: unless-stopped
 
     environment:
-      POSTGRES_DB: tutorial
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: your-database
+      POSTGRES_USER: your-user
+      POSTGRES_PASSWORD: your-passwaord
 
     ports:
       - "5432:5432"
