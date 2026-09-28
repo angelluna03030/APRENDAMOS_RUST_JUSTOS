@@ -1,5 +1,5 @@
 // @generated automatically by Diesel CLI.
-
+#![allow(non_snake_case)]
 diesel::table! {
     carros (id) {
         id -> Int4,

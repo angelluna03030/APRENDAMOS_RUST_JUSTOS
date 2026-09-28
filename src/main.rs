@@ -1,10 +1,12 @@
-mod router;
+extern crate diesel;
+
 use dotenv::dotenv;
 use std::env;
 use actix_web::{ App, HttpServer, web::{ self } };
-
 use crate::router::{info, insertar_data_base};
-
+mod models;
+mod schema;
+mod router;
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     dotenv().ok();
