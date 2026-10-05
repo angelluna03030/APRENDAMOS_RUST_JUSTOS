@@ -36,6 +36,7 @@ impl CarroModel {
         let cars = carros.select(CarroModel::as_select()).load::<CarroModel>(conn);
         cars
     }
+
     pub fn add_carros<'a>(
         conn: &'a mut PgConnection,
         car: &'a NewcarrosHandler
@@ -46,7 +47,8 @@ impl CarroModel {
             marca: &car.marca,
             modelo: Some(&car.modelo),
         };
-        diesel::insert_into(carros::table)
+        diesel
+            ::insert_into(carros::table)
             .values(new_cards)
             .returning(CarroModel::as_returning())
             .get_result::<CarroModel>(conn)

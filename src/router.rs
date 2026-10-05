@@ -2,7 +2,7 @@ use actix_web::{ HttpRequest, HttpResponse, Responder, get, post, web };
 use std::sync::{ Mutex, OnceLock };
 use diesel::pg::PgConnection;
 use serde_json::json;
-use diesel::r2d2::{ Pool, self };
+use diesel::r2d2::{ self };
 use diesel::r2d2::{ ConnectionManager };
 use crate::models::carros::{ NewcarrosHandler, CarroModel };
 
@@ -67,3 +67,5 @@ pub(crate) async fn get_carros(
             Err(err) => HttpResponse::Ok().body(err.to_string()),
     }
 }
+
+
