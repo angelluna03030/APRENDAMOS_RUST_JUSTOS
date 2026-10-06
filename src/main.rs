@@ -12,6 +12,7 @@ mod router;
 async fn main() -> std::io::Result<()> {
     dotenv().ok();
     let database_url = env::var("DATABASE_URL").expect("DATABASE_URL must be set");
+   // print!("database_url: {}", database_url);
     let connection = ConnectionManager::<PgConnection>::new(database_url);
     let pool = Pool::builder()
         .build(connection)

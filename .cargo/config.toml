@@ -1,2 +1,7 @@
 [alias]
 dev = "watch -x run"
+[build]
+rustflags = [
+    "-L",
+    "native=C:\\Program Files\\PostgreSQL\\18\\lib"
+]

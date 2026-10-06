@@ -1,21 +1,19 @@
-
 services:
   postgres:
     image: postgres:17
-    container_name: your-container
+    container_name: postgresql
     restart: unless-stopped
 
     environment:
-      POSTGRES_DB: your-database
-      POSTGRES_USER: your-user
-      POSTGRES_PASSWORD: your-passwaord
+      POSTGRES_DB: tutorial
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
 
     ports:
-      - "5432:5432"
+      - "5433:5432"
 
     volumes:
       - pulso_postgres_data:/var/lib/postgresql/data
 
 volumes:
   pulso_postgres_data:
-

@@ -37,19 +37,39 @@ pub(crate) async fn info() -> impl Responder {
     let db = get_data_base().lock().unwrap();
     HttpResponse::Ok().body(db.join(", "))
 }
-
 #[post("/api/carro/newcarro")]
 pub(crate) async fn new_carro(
     pool: web::Data<r2d2::Pool<ConnectionManager<PgConnection>>>,
-    item: web::Json<NewcarrosHandler>
+    item: web::Json<NewcarrosHandler>,
 ) -> impl Responder {
-    let mut conn = pool.get().expect("Problemas al obtenr la conexio ");
-    match web::block(move || CarroModel::add_carros(&mut conn, &item)).await{
-        Ok(data) =>{
-            let data = data.unwrap();
-            HttpResponse::Ok().json(json!(data))
+
+    let mut conn = match pool.get() {
+        Ok(conn) => conn,
+        Err(err) => {
+            return HttpResponse::InternalServerError()
+                .body(format!("Error obteniendo conexión: {}", err));
         }
-            Err(err) => HttpResponse::Ok().body(err.to_string()),
+    };
+
+    let item = item.into_inner();
+
+    match web::block(move || {
+        CarroModel::add_carros(&mut conn, &item)
+    }).await {
+
+        Ok(Ok(data)) => {
+            HttpResponse::Ok().json(data)
+        }
+
+        Ok(Err(err)) => {
+            HttpResponse::InternalServerError()
+                .body(format!("Error insertando carro: {}", err))
+        }
+
+        Err(err) => {
+            HttpResponse::InternalServerError()
+                .body(format!("Error ejecutando operación: {}", err))
+        }
     }
 }
 
